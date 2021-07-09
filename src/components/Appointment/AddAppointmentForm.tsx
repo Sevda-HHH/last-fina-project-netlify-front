@@ -65,7 +65,7 @@ export const AddAppointmentForm = () => {
                             } else {
                                 warnHasPast!.classList.add("d-none")
                                 let count = 0
-                                appointments.map((appoint: IAppointment) => {
+                                await appointments.map((appoint: IAppointment) => {
                                     if (moment(values.date).diff(appoint.date) < 0) {
                                         if (moment(values.date).diff(appoint.date) * (-1) <= 1795471) {
                                             count = count + 1
@@ -96,7 +96,6 @@ export const AddAppointmentForm = () => {
                 >
                     {({ errors, touched }) => (
                         <div className="row">
-
                             <Form style={{ textAlign: "start" }}
                                 className=" m-auto row">
                                 <div className="col-lg-6 mt-3">
