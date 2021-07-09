@@ -3,7 +3,7 @@ import { HttpClient } from '../HttpClient'
 class AppointmentServices extends HttpClient {
 
     constructor() {
-        super("http://localhost:8888");
+        super("https://server-final-project.herokuapp.com");
     }
     getAppointments(pageNo: number, itemCount: number, quo: string) {
         return this.get(`appointment?pageNo=${pageNo}&itemCount=${itemCount}&searchQuery=${quo}`)

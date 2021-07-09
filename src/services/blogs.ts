@@ -3,7 +3,7 @@ import { HttpClient } from '../HttpClient'
 class BlogServices extends HttpClient {
 
     constructor() {
-        super("http://localhost:8888");
+        super("https://server-final-project.herokuapp.com");
     }
     getBlogs(pageNo: number, itemCount: number, query: string) {
         return this.get(`blogs?pageNo=${pageNo}&itemCount=${itemCount}&searchQuery=${query}`)

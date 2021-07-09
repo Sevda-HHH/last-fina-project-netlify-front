@@ -4,7 +4,7 @@ import { IContactPayload } from '../utils/interfaces/contact';
 class ContactServices extends HttpClient {
 
     constructor() {
-        super("http://localhost:8888");
+        super("https://server-final-project.herokuapp.com");
     }
     getAllContacts(pageNo: number, itemCount: number, quo: string) {
         return this.get(`contact?pageNo=${pageNo}&itemCount=${itemCount}&searchQuery=${quo}`)
