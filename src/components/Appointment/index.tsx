@@ -16,7 +16,7 @@ export const OnlineAppointment = () => {
                         <h4>
                             Enter via a QR code
                         </h4>
-                        <QRCode value="https://60e871d5f729b1373b15e619--youthful-raman-0b2aea.netlify.app/appointment" />
+                        <QRCode value="https://60e871d5f729b1373b15e619--youthful-raman-0b2aea.netlify.app" />
                     </div>
                     <div className="col-lg-6">
                         <AddAppointmentForm />
