@@ -68,10 +68,19 @@ export const AddAppointmentForm = () => {
                                 await appointments.map(async (appoint: IAppointment) => {
                                     console.log(moment(values.date).diff(appoint.date))
                                     if (moment(values.date).diff(appoint.date) < 0) {
-
-                                        count = count + 1
+                                        await console.log("daxil oldu")
+                                        let newValue = await moment(values.date).diff(appoint.date) * (-1)
+                                        if (newValue <= 1795471) {
+                                            console.log("daxil oldu 2")
+                                            count = count + 1
+                                        }
                                     }
-
+                                    else {
+                                        if (moment(values.date).diff(appoint.date) <= 1795471) {
+                                            console.log("daxil oldu 3")
+                                            count = count + 1
+                                        }
+                                    }
                                 })
                                 await console.log("count", count)
                                 if (count <= 0) {
