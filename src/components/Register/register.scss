@@ -1,0 +1,68 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/colors";
+.loginLeftSideImage {
+    display: flex;
+}
+.loginTextDes {
+    font-family: "Rubik", sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: $orange;
+    font-size: 25px;
+}
+.loginTextHead {
+    // padding-top: 100px;
+
+    color: $orange;
+    font-weight: 700;
+}
+.loginForm {
+    align-self: center;
+    label {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 88%;
+    }
+    .form-control {
+        padding: 25px 10px;
+        background: white !important;
+    }
+    .formLoginEmail {
+        background: white !important;
+    }
+    .heading {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    .lilDes {
+        color: #6c757d !important;
+        font-size: 22px;
+    }
+    .signInBtn {
+        padding-top: 15px;
+        width: 100%;
+        .btn.btn-primary {
+            border-radius: 35px;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 600;
+            background: $orange;
+            padding: 12px 45px;
+            box-shadow: $orange 0px 4px 8px 0px;
+            border: 1px solid $orange;
+            &:hover {
+                background: $purle;
+                border: 1px solid $purle;
+                box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+                -webkit-transition-duration: 400ms;
+                transition-duration: 400ms;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: "1000px") {
+    .loginLeftSideImage {
+        display: none;
+    }
+}

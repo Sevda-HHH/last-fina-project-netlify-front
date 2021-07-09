@@ -1,0 +1,52 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/colors.scss";
+
+.getVaccinatedBtn {
+    padding-top: 15px;
+    width: 100%;
+    .btn.btn-primary {
+        border-radius: 35px;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 500;
+        background: $orange;
+        padding: 10px 25px;
+        border: 1px solid $orange;
+        &:hover {
+            background: $purle;
+            border: 1px solid $purle;
+            box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+            -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;
+        }
+    }
+}
+.navLinkss {
+    overflow-x: hidden !important;
+}
+.navLinks li a {
+    text-decoration: none;
+    display: block;
+    color: #294e7d;
+    font-size: 18px;
+    padding-top: 10px;
+    min-height: 62px;
+    background-color: transparent !important;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0.8px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: "Poppins", sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    &:hover {
+        color: $orange;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navLinks {
+        flex-wrap: wrap !important;
+    }
+}

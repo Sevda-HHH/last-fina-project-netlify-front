@@ -1,0 +1,51 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/colors.scss";
+.MuiDialog-paperWidthSm {
+    height: 100vh;
+    overflow-y: hidden !important;
+    background: #f7f7fc !important;
+    padding: 55px 50px !important;
+    border-radius: 20px !important;
+}
+.MuiDialogContent-root {
+    padding: 0 !important;
+}
+.formContent {
+    form {
+        .form-control {
+            font-style: italic;
+            border-radius: 10px;
+            padding: 25px 15px;
+            border-color: transparent !important;
+        }
+    }
+    .title h3 {
+        line-height: 40px;
+        margin-bottom: 5px;
+        font-family: "Rubik", sans-serif;
+        font-weight: 600;
+        font-size: 2.2rem;
+        width: 75%;
+    }
+    .signInBtn {
+        padding: 0 10px;
+        width: 100%;
+        .btn.btn-primary {
+            border-radius: 35px;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 600;
+            background: $orange;
+            padding: 12px 45px;
+            box-shadow: $orange 0px 4px 8px 0px;
+            border: 1px solid $orange;
+            &:hover {
+                background: $purle;
+                border: 1px solid $purle;
+                box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+                -webkit-transition-duration: 400ms;
+                transition-duration: 400ms;
+            }
+        }
+    }
+}

@@ -1,0 +1,158 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/colors.scss";
+#blogs {
+    overflow-x: hidden;
+    #blogCards {
+        .card {
+            margin-top: 20px;
+            text-align: start !important;
+            border-radius: 0 !important;
+            border: 0px solid transparent;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            img {
+                max-height: 60vh;
+            }
+            .title h4 a {
+                font-size: 21px;
+                color: #35404e;
+                -webkit-transition: 0.3s;
+                text-decoration: none;
+                transition: 0.3s;
+                &:hover {
+                    color: $orange;
+                }
+            }
+            .readMore {
+                text-decoration: none;
+                font-size: 18px;
+                font-weight: 400;
+                color: $grey-p !important;
+                display: inline-block;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                &:hover {
+                    color: $orange !important;
+                }
+            }
+            .cardFooter {
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 400;
+                padding: 15px 2px;
+                color: #565972 !important;
+                display: inline-block;
+                -webkit-transition: 0.3s;
+                transition: 0.3s;
+                margin-top: 15px;
+                border-top: 1px solid #e7e7e7;
+                svg {
+                    padding: 2px;
+                }
+            }
+        }
+    }
+    .content {
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        .title {
+            .titleChild {
+                width: 100%;
+                font-size: 30px;
+                font-weight: 700;
+            }
+        }
+        .des {
+            font-size: 25px;
+            color: $grey-p;
+        }
+    }
+    .singleBlogContent {
+        margin-bottom: 100px;
+        text-align: start;
+        .singleCardHead {
+            color: $grey-p;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 50px;
+        }
+        .title {
+            width: 100%;
+            font-size: 35px;
+            font-weight: 700;
+            margin-top: 10px;
+            color: #35404e;
+        }
+        .smallDesSingle {
+            h5 {
+                color: $grey-p !important;
+                padding-left: 15%;
+                font-size: 16px;
+                color: $purle !important;
+                font-weight: 400;
+            }
+        }
+        .mainDesSingle {
+            h5 {
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 34px;
+                color: #565972;
+            }
+        }
+    }
+    .blogsForm {
+        .formContent {
+            height: 100vh;
+            overflow-y: hidden !important;
+            background: #f7f7fc !important;
+            padding: 55px 50px !important;
+            border-radius: 20px !important;
+            form {
+                .form-control {
+                    font-style: italic;
+                    border-radius: 10px;
+                    padding: 35px 15px !important;
+                    border-color: transparent !important;
+                }
+            }
+            .title h3 {
+                line-height: 40px;
+                margin-bottom: 29px;
+                font-family: "Rubik", sans-serif;
+                font-weight: 600;
+                font-size: 2.2rem;
+                width: 84%;
+            }
+            .submitBlogBtns {
+                padding: 0 10px;
+                width: 100%;
+                .btn.btn-primary {
+                    border-radius: 35px;
+                    font-size: 18px;
+                    color: #ffffff;
+                    font-weight: 600;
+                    background: $orange;
+                    padding: 12px 45px;
+                    box-shadow: $orange 0px 4px 8px 0px;
+                    border: 1px solid $orange !important ;
+                    border-color: $orange !important ;
+                    &:hover {
+                        border-color: $orange !important ;
+                        background-color: $purle !important ;
+                        border: 1px solid $purle;
+                        box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+                        -webkit-transition-duration: 400ms;
+                        transition-duration: 400ms;
+                    }
+                }
+            }
+        }
+    }
+}

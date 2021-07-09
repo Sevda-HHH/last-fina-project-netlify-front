@@ -1,0 +1,148 @@
+@import "../../assets/scss/utils/variables";
+@import "../../assets/scss/utils/colors.scss";
+
+.introMain {
+    overflow-x: hidden;
+    .introPeopleImage {
+        img {
+            width: 120%;
+        }
+    }
+    padding-top: 8%;
+    overflow-x: hidden;
+    text-align: start;
+    .preHead {
+        h5 {
+            margin-bottom: 25px;
+            color: #294e7d;
+            font-family: "Rubik", sans-serif;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+    }
+    .head {
+        font-size: 56px;
+        line-height: 66px;
+        margin-bottom: 15px;
+        font-weight: 600;
+        color: $purle;
+        font-family: "Rubik", sans-serif;
+    }
+    .des {
+        font-size: 24px;
+        line-height: 40px;
+        margin: 0;
+        margin-bottom: 33px;
+        font-weight: 300;
+        color: #8a8eaa;
+    }
+    .buttons {
+        .getVaccinatedBtn {
+            padding-top: 15px;
+            width: 100%;
+            .btn.btn-primary {
+                border-radius: 35px;
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 600;
+                background: $orange;
+                padding: 15px 45px;
+                border: 1px solid $orange;
+                &:hover {
+                    background: $purle;
+                    border: 1px solid $purle;
+                    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+                    -webkit-transition-duration: 400ms;
+                    transition-duration: 400ms;
+                }
+            }
+        }
+        .contactUsBtn {
+            padding-top: 15px;
+            width: 100%;
+
+            .btn.btn-primary {
+                .phoneIcon {
+                    color: $grey-p;
+                    font-size: 26px;
+                }
+                border-radius: 35px;
+                font-size: 18px;
+                color: $grey-p;
+                font-weight: 600;
+                background: white;
+                padding: 15px 55px;
+                border: 1px solid $orange;
+                &:hover {
+                    color: white;
+                    background: $orange;
+                    border: 2px solid $orange;
+                    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+                    -webkit-transition-duration: 400ms;
+                    transition-duration: 400ms;
+                    .phoneIcon {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#secondSection {
+    .content {
+        text-align: start;
+        .head {
+            background: #e8e7fa;
+            padding: 2px 15px;
+            font-size: 13px;
+            line-height: 30px;
+            border-radius: 30px;
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            color: #706ad4;
+            margin-bottom: 30px;
+            text-transform: capitalize;
+        }
+        .title h2 {
+            font-weight: 700;
+            line-height: 60px;
+        }
+        .des h4 {
+            font-family: "Poppins", sans-serif;
+            color: #8a8eaa;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 40px;
+        }
+        .checkSymptomsBtn {
+            padding-top: 15px;
+            width: 100%;
+            .btn.btn-primary {
+                border-radius: 35px;
+                font-size: 18px;
+                color: #ffffff;
+                font-weight: 600;
+                background: $orange;
+                padding: 15px 45px;
+                border: 1px solid $orange;
+                &:hover {
+                    background: $purle;
+                    border: 1px solid $purle;
+                    box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
+                    -webkit-transition-duration: 400ms;
+                    transition-duration: 400ms;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .introPeopleImage img {
+        width: 100% !important;
+    }
+}

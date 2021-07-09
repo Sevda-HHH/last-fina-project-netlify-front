@@ -1,0 +1,17 @@
+@import "./variables";
+.text-orange {
+    color: $orange !important;
+}
+.text-purple {
+    color: $purle !important;
+}
+.bg-orange {
+    background: $orange !important;
+}
+.bg-purple {
+    background: $purle !important;
+}
+
+.text-grey {
+    color: $grey-p;
+}
