@@ -5,7 +5,7 @@ import { IAuthUserPayload } from "../../utils/interfaces/user";
 
 export function login(data: IAuthUserPayload) {
     return async function (dispatch: Dispatch) {
-        const user = await axios.post('http://localhost:8888/auth/login', data).then(res => res.data);
+        const user = await axios.post('https://server-final-project.herokuapp.com/auth/login', data).then(res => res.data);
         if (user) {
             localStorage.setItem('token', JSON.stringify(user))
         }
