@@ -66,10 +66,12 @@ export const AddAppointmentForm = () => {
                                 warnHasPast!.classList.add("d-none")
                                 let count = 0
                                 await appointments.map(async (appoint: IAppointment) => {
-                                    console.log("value date ", moment(values.date).format("YYYY-MM-DDTHH:mm"))
+                                    var testDateUtc = moment.utc(values.date);
+                                    var localDate = moment(testDateUtc).local();
+                                    console.log("value date ", moment(localDate).format("YYYY-MM-DDTHH:mm"))
                                     console.log("appoint date ", moment(appoint.date).format("YYYY-MM-DDTHH:mm"))
-                                    console.log((moment(values.date).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))))
-                                    if (Math.abs(moment(values.date).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))) <= 12600000) {
+                                    console.log((moment(localDate).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))))
+                                    if (Math.abs(moment(localDate).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))) <= 12600000) {
                                         console.log("daxil oldu 3")
                                         count = count + 1
                                     }
