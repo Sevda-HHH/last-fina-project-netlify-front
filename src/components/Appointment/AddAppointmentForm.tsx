@@ -77,7 +77,7 @@ export const AddAppointmentForm = () => {
                                         }
                                     }
                                 })
-                                console.log("count", count)
+                                await console.log("count", count)
                                 if (count <= 0) {
                                     await warnNotAvailable!.classList.add("d-none")
                                     await appointmentServices.addAppointment(values)
