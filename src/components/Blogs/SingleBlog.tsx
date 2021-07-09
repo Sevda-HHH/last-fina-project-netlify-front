@@ -40,12 +40,12 @@ export const SingleBlog = () => {
                         <div className="title">
                             {singleBlog?.title}
                         </div>
-                        <div className="mt-3 smallDesSingle w-100">
+                        <div className="mt-3 smallDesSingle  ">
                             <h5 >
                                 {singleBlog?.smallDes}
                             </h5>
                         </div>
-                        <div className="mainDesSingle mt-3  ">
+                        <div className="mainDesSingle mt-3 w-50 ">
                             <h5>
                                 {singleBlog?.mainDes}
                             </h5>
