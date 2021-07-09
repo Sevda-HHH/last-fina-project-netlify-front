@@ -71,7 +71,7 @@ export const AddAppointmentForm = () => {
                                     console.log("value date ", moment(localDate).format("YYYY-MM-DDTHH:mm"))
                                     console.log("appoint date ", moment(appoint.date).format("YYYY-MM-DDTHH:mm"))
                                     console.log((moment(localDate).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))))
-                                    if (Math.abs(moment(localDate).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))) <= 1800000) {
+                                    if (Math.abs(moment(localDate).diff(moment(appoint.date).format("YYYY-MM-DDTHH:mm"))) < 1800000) {
                                         console.log("daxil oldu 3")
                                         count = count + 1
                                     }
