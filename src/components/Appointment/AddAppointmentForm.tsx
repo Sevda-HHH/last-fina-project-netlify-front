@@ -96,6 +96,7 @@ export const AddAppointmentForm = () => {
                 >
                     {({ errors, touched }) => (
                         <div className="row">
+
                             <Form style={{ textAlign: "start" }}
                                 className=" m-auto row">
                                 <div className="col-lg-6 mt-3">
