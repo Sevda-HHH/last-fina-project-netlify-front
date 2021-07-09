@@ -65,12 +65,13 @@ export const AddAppointmentForm = () => {
                             } else {
                                 warnHasPast!.classList.add("d-none")
                                 let count = 0
-                                await appointments.map((appoint: IAppointment) => {
+                                await appointments.map(async (appoint: IAppointment) => {
                                     console.log(moment(values.date).diff(appoint.date))
                                     if (moment(values.date).diff(appoint.date) < 0) {
-                                        console.log("daxil oldu")
-                                        if (moment(values.date).diff(appoint.date) * (-1) <= 1795471) {
-                                            console.log("daxil oldu 2")
+                                        await console.log("daxil oldu")
+                                        let newValue = await moment(values.date).diff(appoint.date) * (-1)
+                                        if (newValue <= 1795471) {
+                                            await console.log("daxil oldu 2")
                                             count = count + 1
                                         }
                                     }
