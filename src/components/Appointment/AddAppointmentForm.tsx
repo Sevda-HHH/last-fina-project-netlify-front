@@ -77,7 +77,7 @@ export const AddAppointmentForm = () => {
                                         }
                                     }
                                 })
-                                if (count < 0) {
+                                if (count <= 0) {
                                     await warnNotAvailable!.classList.add("d-none")
                                     await appointmentServices.addAppointment(values)
                                     Swal.fire(
