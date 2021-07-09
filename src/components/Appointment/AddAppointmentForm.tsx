@@ -66,6 +66,7 @@ export const AddAppointmentForm = () => {
                                 warnHasPast!.classList.add("d-none")
                                 let count = 0
                                 await appointments.map((appoint: IAppointment) => {
+                                    console.log(moment(values.date).diff(appoint.date))
                                     if (moment(values.date).diff(appoint.date) < 0) {
                                         if (moment(values.date).diff(appoint.date) * (-1) <= 1795471) {
                                             count = count + 1
